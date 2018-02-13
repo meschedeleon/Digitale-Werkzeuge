@@ -4,18 +4,18 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/atom-one-light.css">
+	<link rel="stylesheet" href="{{"/assets/css/atom-one-light.css"  | relative_url}}">
     {% if page.title or page.title == 'me' %}
         <title>{{ page.title }}</title>
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/002.css">
+		<link rel="stylesheet" type="text/css" href="{{"/assets/css/002.css" | relative_url }}">
     {% else %}
         <title>{{ site.name }}</title>
-		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/001.css">
+		<link rel="stylesheet" type="text/css" href="{{"/assets/css/001.css" | relative_url }}">
     {% endif %}
-	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/font-awesome.min.css">
-	<link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.ico" type="image/x-icon">
-	<script src="{{ site.baseurl }}/assets/js/highlight.pack.js"></script>
+	<link rel="stylesheet" href="{{"/assets/css/font-awesome.min.css" | relative_url}}">
+	<link rel="shortcut icon" href="{{"/assets/img/favicon.ico" | relative_url}}" type="image/x-icon">
+	<link rel="icon" href="{{"/assets/img/favicon.ico | relative_url}}" type="image/x-icon">
+	<script src="{{"/assets/js/highlight.pack.js" | relative_url}}"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
