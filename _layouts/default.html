@@ -35,7 +35,7 @@
 			<ul>
 				{% assign tags = site.tags | sort %}
 				{% for tag in tags %}
-				<li><a href="{{ site.baseurl }}/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/folder.ico" />{{ tag[0] | replace:'-', ' ' }}</a></li>
+				<li><a href="{{ site.baseurl }}/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="{{ site.baseurl }}/assets/img/folder.ico" />{{ tag[0] | replace:'-', ' ' }}</a></li>
 				{% endfor %}
 			</ul>
 				</li>
@@ -46,7 +46,7 @@
 				{% if page.title == 'me' or page.title == '404...' %}
 					<ul>
 						{% for post in site.posts %}
-						<li><a href="{{ site.baseurl }}{{  post.url }}" title="{{ post.title }}"><img src={{ site.baseurl }}/assets/img/file.ico title="{{ post.title }}" />{{ post.title }}</a></li>
+						<li><a href="{{ site.baseurl }}{{  post.url }}" title="{{ post.title }}"><img src="{{ site.baseurl }}/assets/img/file.ico" title="{{ post.title }}" />{{ site.baseurl }}{{ post.title }}</a></li>
 						{% endfor %}
 					</ul>
 				{% else %}
@@ -55,7 +55,7 @@
 			{% else %}
 				<ul>
 					{% for post in site.posts %}
-					<li><a href="{{ site.baseurl }}{{  post.url }}" title="{{ post.title }}"><img src="{{ site.baseurl }}/assets/img/file.ico" title="{{ post.title }}" />{{ post.title }}</a></li>
+					<li><a href="{{ site.baseurl }}{{  post.url }}" title="{{ post.title }}"><img src="{{ site.baseurl }}/assets/img/file.ico" title="{{ site.baseurl }}{{ post.title }}" />{{ site.baseurl }}{{ post.title }}</a></li>
 					{% endfor %}
 				</ul>
 			{% endunless %}
@@ -74,7 +74,7 @@
 			<div class="post_title">
 				<img src="{{ site.baseurl }}/assets/img/file.png" />
 				<h1>{{  page.title  }}</h1>
-				<a href="/"><div class="btn"><span class="fa fa-times"></span></div></a>
+				<a href="{{ site.baseurl }}/"><div class="btn"><span class="fa fa-times"></span></div></a>
 				<div class="btn btn_max"><span class="fa fa-window-maximize"></span></div>
 				<div class="btn"><span class="fa fa-window-minimize"></span></div>
 			</div>
