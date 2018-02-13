@@ -1,6 +1,6 @@
 permalink: /:year:month:day/:title
 url: https://meschedeleon.github.io
-baseurl: /Digitale-Werkzeuge/blob/gh-pages
+baseurl: /Digitale-Werkzeuge
 
 # variables
 name: Your Site Name
